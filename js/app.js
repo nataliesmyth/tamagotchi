@@ -14,7 +14,9 @@ let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 // console.log(hungryTimerPlaceholder);
 // console.log(sleepTimerPlaceholder);
 // console.log(playTimerPlaceholder);
-
+hungryButton.hidden = true;
+lightsOutButton.hidden = true;
+playTimeButton.hidden = true;
 
 function handleStartGame () {
   // user input is saved in name variable
@@ -26,6 +28,9 @@ function handleStartGame () {
   startSleepTimer();
   startPlayTimer();
   startGameButton.hidden = true;
+  hungryButton.hidden = false;
+  lightsOutButton.hidden = false;
+  playTimeButton.hidden = false;
   // console.log(namePlaceHolder);
 }
 
@@ -82,7 +87,7 @@ function startTimer() {
       } else {
         ripPet();
       }
-    }, 6000);
+    }, 3000);
   }
 
   function startPlayTimer() {
@@ -93,7 +98,7 @@ function startTimer() {
       } else {
         ripPet();
       }
-    }, 6500);
+    }, 3500);
   }
 
   // exit game
