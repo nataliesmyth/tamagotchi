@@ -31,7 +31,7 @@ body {
     color: var(--white);
   }
 
-  btn {
+  button {
     background-color: var(--green);
     border-radius: 5px; 
     border: .75em solid var(--yellow);
