@@ -26,8 +26,6 @@ function handleStartGame () {
   startSleepTimer();
   startPlayTimer();
   startGameButton.hidden = true;
-  // document.getElementById(startGame).style.visibility = "hidden";
-
   // console.log(namePlaceHolder);
 }
 
