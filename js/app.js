@@ -25,6 +25,8 @@ function handleStartGame () {
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
+  // document.getElementById(startGame).style.visibility = "hidden";
+
   // console.log(namePlaceHolder);
 }
 
