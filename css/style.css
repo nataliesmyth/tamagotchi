@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--blue);
-    color: var(--white)
+    color: var(--white);
     margin: 2em auto;
     font-size: 16px;
     max-width: 1200px;
@@ -20,12 +20,15 @@ body {
   }
 
   h1 {
+    text-align: center;
     margin: .5em;
     font-weight: 900;
+    color: var(--white);
   }
 
   p {
-    margin: 1em;
+    margin: 1em 1em 1em 3em;
+    color: var(--white);
   }
 
   button {
