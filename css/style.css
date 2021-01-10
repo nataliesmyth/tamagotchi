@@ -31,7 +31,7 @@ body {
     color: var(--white);
   }
 
-  button {
+  btn {
     background-color: var(--green);
     border-radius: 5px; 
     border: .75em solid var(--yellow);
@@ -60,8 +60,9 @@ body {
   }
 
 .gameButtons {
-    display: flex;
-    justify-content: space-around; 
+  display: inline-block;
+    /* display: flex; */
+    /* justify-content: space-around;  */
 }
 
 /*  .egg {
