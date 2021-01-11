@@ -26,12 +26,18 @@ body {
     color: var(--white);
   }
 
+  main {
+    display: flex;
+    margin: 1em auto;
+  }
+
   p {
     margin: 1em 1em 1em 3em;
     color: var(--white);
   }
 
   button {
+    margin: 1em auto;
     background-color: var(--green);
     border-radius: 5px; 
     border: .75em solid var(--yellow);
@@ -52,7 +58,7 @@ body {
       height: 180px;
   } */
 
-  .startButton {
+.startButton {
     position: -webkit-sticky;  
     position: sticky;
     top: 0;
@@ -61,9 +67,12 @@ body {
 
 .gameButtons {
   display: inline-block;
-    /* display: flex; */
-    /* justify-content: space-around;  */
+  /* width: 110px; */
 }
+
+/* .gameTimers {
+  width: 110px;
+} */
 
 /*  .egg {
     background-color: rgb(240, 243, 189);
