@@ -39,21 +39,21 @@ function handleHungry () {
   // 
   if (hungry > 0 && hungry < 10) {
     hungry--;
-    hungryTimerPlaceholder.textContent = `hungry: ${hungry}`;
+    hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
 function handleLightsOut () {
   if (sleep > 0 && sleep < 10) {
     sleep--
-    sleepTimerPlaceholder.textContent = `sleep: ${sleep}`;
+    sleepTimerPlaceholder.textContent = `sleepyness: ${sleep}`;
   }
 }
 
 function handlePlayTime () {
   if (play > 0 && play < 10) {
     play--
-    playTimerPlaceholder.textContent = `play: ${play}`;
+    playTimerPlaceholder.textContent = `boredom: ${play}`;
   }
 }
 

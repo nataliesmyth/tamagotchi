@@ -1,68 +1,64 @@
 :root {
-   --blue: rgb(5, 102, 141);
-   --white: rgb(248, 248, 255);
-   --green: rgb(2, 195, 154);
-   --yellow: rgb(240, 243, 189);
+  --blue: rgb(5, 102, 141);
+  --white: rgb(248, 248, 255);
+  --green: rgb(2, 195, 154);
+  --yellow: rgb(240, 243, 189);
 }
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background-color: var(--blue);
-    color: var(--white);
-    margin: 2em auto;
-    font-size: 16px;
-    max-width: 1200px;
-    font-family: sans-serif;
-  }
+  background-color: var(--blue);
+  color: var(--white);
+  margin: 2em auto;
+  font-size: 16px;
+  max-width: 1200px;
+  font-family: sans-serif;
+}
 
-  h1 {
-    text-align: center;
-    margin: .5em;
-    font-weight: 900;
-    color: var(--white);
-  }
-  
-  h3 {
-    font-weight: 400;
-    display: inline;
-    text-align: center;
-  }
+button {
+  display: block;
+  margin: 1em auto;
+  background-color: var(--green);
+  border-radius: 5px; 
+  border: .75em solid var(--yellow);
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  width: 138.65px;
+}
 
-  main {
-    display: flex;
-    margin: 1em auto;
-  }
+h1 {
+  text-align: center;
+  margin: .5em;
+  font-weight: 900;
+  color: var(--white);
+}
 
-  p {
-    margin: 1em 1em 1em 3em;
-    color: var(--white);
-  }
+h3 {
+  font-weight: 400;
+  /* display: inline; */
+  text-align: center;
+}
 
-  button {
-    margin: 1em auto;
-    background-color: var(--green);
-    border-radius: 5px; 
-    border: .75em solid var(--yellow);
-    padding: 1em;
-    font-size: 1em;
-    font-weight: 700;
-  }
+header {
+  margin: 0 auto;
+  height: 104.4px;
+}
 
-  /* .pet {
-      background-color: rgb(248, 248, 194);
-      position: fixed;
-      top: 40%;
-      left: 75%;
-      transform: translate(-50%, -50%);
-      border-radius: 100px;
-      border: 15px solid rgb(253, 253, 226);
-      width: 126px;
-      height: 180px;
-  } */
+main {
+  display: flex;
+  margin: 1em auto;
+  justify-content: space-between;
+}
+
+p {
+  margin: 1em 1em 1em 3em;
+  color: var(--white);
+}
 
 .startButton {
     position: -webkit-sticky;  
@@ -72,9 +68,21 @@ body {
   }
 
 .gameButtons {
-  display: inline-block;
-  /* width: 110px; */
+  display: block;
 }
+
+/* .pet {
+    background-color: rgb(248, 248, 194);
+    position: fixed;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    border: 15px solid rgb(253, 253, 226);
+    width: 126px;
+    height: 180px;
+  } */
+
 
 /* .gameTimers {
   width: 110px;
