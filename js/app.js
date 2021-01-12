@@ -22,7 +22,7 @@ function handleStartGame () {
   // user input is saved in name variable
   let name = prompt("What is your name?");
   let namePlaceHolder = document.getElementById('name');
-  namePlaceHolder.textContent = name;
+  namePlaceHolder.textContent = `name: ${name}`;
   startTimer();
   startHungryTimer();
   startSleepTimer();
