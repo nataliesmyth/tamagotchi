@@ -50,7 +50,10 @@ header {
 }
 
 main {
-  display: flex;
+  display: block;
+  position: relative;
+  border: solid var(--green);
+  /* display: flex; */
   margin: 1em;
   justify-content: space-between;
 }
@@ -58,6 +61,7 @@ main {
 p {
   margin: 1em 1em 1em 3em;
   color: var(--white);
+  width: 50%;
 }
 
 .animated {
@@ -86,19 +90,18 @@ p {
 .border {
   display: block;
   position: relative;
-  border: solid var(--green);
 }
 
 .gameButtons {
   display: block;
 }
 
-.startButton {
-  position: -webkit-sticky;  
+/* .startButton {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 5px;    
-}
+} */
 
 /* FACE */
 
@@ -160,7 +163,7 @@ p {
    -webkit-animation-name: wobble; 
    animation-name: wobble; 
 }
- .pet {
+ /* .pet {
  background-color: rgb(248, 248, 194);
  position: fixed;
  top: 40%;
@@ -174,7 +177,7 @@ p {
 
   .gameTimers {
   width: 110px;
-} */
+}
 
 /*  .egg {
     background-color: rgb(240, 243, 189);
