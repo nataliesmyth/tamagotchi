@@ -21,7 +21,6 @@ body {
 }
 
 button {
-  /* display: block; */
   margin: 1em auto;
   background-color: var(--green);
   border-radius: 5px; 
@@ -42,7 +41,6 @@ h1 {
 
 h3 {
   font-weight: 400;
-  /* display: inline; */
   text-align: center;
 }
 
@@ -55,7 +53,6 @@ main {
   display: block;
   position: relative;
   border: solid var(--green);
-  /* display: flex; */
   margin: 1em;
   padding: 1em;
   justify-content: space-between;
@@ -63,9 +60,6 @@ main {
 
 p {
   padding: 1em;
-  /* margin: 1em 1em 1em 3em; */
-  /* color: var(--white); */
-  /* width: 50%; */
 }
 
 .border {
@@ -78,9 +72,9 @@ p {
   text-align: center;
 }
 
-.gameTimers {
+/* .gameTimers {
   width: 110px;
-}
+} */
 
 /* .pet-name-age {
   display: inline;
