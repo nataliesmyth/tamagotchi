@@ -35,6 +35,8 @@ function handleStartGame () {
   startSleepTimer();
   startPlayTimer();
   startGameButton.hidden = true;
+  petAge.hidden = false;
+  petName.hidden = false;
   hungryButton.hidden = false;
   lightsOutButton.hidden = false;
   playTimeButton.hidden = false;
