@@ -56,35 +56,18 @@ main {
   margin: 1em;
   padding: 1em;
   justify-content: space-between;
+  height: 500px;
 }
 
 p {
   padding: 1em;
 }
 
-.border {
-  display: block;
-  position: relative;
-}
-
-.gameButtons {
-  display: block;
-  text-align: center;
-}
-
-/* .gameTimers {
-  width: 110px;
-} */
-
-/* .pet-name-age {
-  display: inline;
-} */
-
-/* .animated {
+.animated {
   background-color: rgb(240, 243, 189);
-  position: absolute;
-  top: 40%;
-  left: 40%;
+  position: relative;
+  top: -141px;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 187.5px;
@@ -101,6 +84,31 @@ p {
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.tamagotchi {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+.gameButtons {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -75px;
+}
+
+.pet-name-age {
+  padding: 2em;
+}
+
+/* .gameTimers {
+  padding: 1em;
+} */
+
+/* .pet-name-age {
+  display: inline;
 } */
 
 /* .startButton {
@@ -112,7 +120,7 @@ p {
 
 /* FACE */
 
-/* .eyeleft {
+.eyeleft {
   position: absolute;
   top: 44%;
   left: 36%;
@@ -144,10 +152,12 @@ p {
   height: 5px;
   background-color: #AC9969;
   border-radius: 100%;
-} */
+}
+
+
   /* ANIMATION */
   
-/* @-webkit-keyframes wobble { 
+@-webkit-keyframes wobble { 
    0% { -webkit-transform: translateX(0%); } 
    15% { -webkit-transform: translateX(-25%) rotate(-5deg); } 
    30% { -webkit-transform: translateX(20%) rotate(3deg); } 
@@ -166,10 +176,12 @@ p {
    75% { transform: translateX(-5%) rotate(-1deg); } 
    100% { transform: translateX(0%); } 
 }
- .wobble { 
+/*
+.wobble { 
    -webkit-animation-name: wobble; 
-   animation-name: wobble;  */
-}
+   animation-name: wobble;
+} */
+
  /* .pet {
  background-color: rgb(248, 248, 194);
  position: fixed;
@@ -198,6 +210,3 @@ p {
     animation: wobble 8s linear infinite;
     transform-origin: 0 50%;
   }  */
-      
-
-  
