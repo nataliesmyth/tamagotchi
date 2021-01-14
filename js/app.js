@@ -25,6 +25,10 @@ hungryButton.hidden = true;
 lightsOutButton.hidden = true;
 playTimeButton.hidden = true;
 
+// hide egg
+let egg = document.getElementById('egg')
+egg.hidden = true;
+
 function handleStartGame () {
   // user input is saved in name variable
   let name = prompt("What is your name?");
@@ -34,6 +38,7 @@ function handleStartGame () {
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
+  egg.hidden = false;
   startGameButton.hidden = true;
   petAge.hidden = false;
   petName.hidden = false;

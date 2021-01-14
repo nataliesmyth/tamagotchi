@@ -56,6 +56,7 @@ main {
   margin: 1em;
   padding: 1em;
   justify-content: space-between;
+  height: 500px;
 }
 
 p {
@@ -65,8 +66,8 @@ p {
 .animated {
   background-color: rgb(240, 243, 189);
   position: relative;
-  top: 40%;
-  left: 40%;
+  top: -141px;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 187.5px;
@@ -94,6 +95,8 @@ p {
 .gameButtons {
   display: block;
   text-align: center;
+  position: relative;
+  top: -75px;
 }
 
 .pet-name-age {
@@ -101,7 +104,7 @@ p {
 }
 
 /* .gameTimers {
-  width: 110px;
+  padding: 1em;
 } */
 
 /* .pet-name-age {
