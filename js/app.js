@@ -11,9 +11,16 @@ let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
-// console.log(hungryTimerPlaceholder);
-// console.log(sleepTimerPlaceholder);
-// console.log(playTimerPlaceholder);
+// hide timers
+let petName = document.getElementById('name')
+let petAge = document.getElementById('timer')
+petName.hidden = true;
+petAge.hidden = true;
+hungryTimerPlaceholder.hidden = true;
+playTimerPlaceholder.hidden = true;
+sleepTimerPlaceholder.hidden = true;
+
+// hide buttons
 hungryButton.hidden = true;
 lightsOutButton.hidden = true;
 playTimeButton.hidden = true;
@@ -28,10 +35,14 @@ function handleStartGame () {
   startSleepTimer();
   startPlayTimer();
   startGameButton.hidden = true;
+  petAge.hidden = false;
+  petName.hidden = false;
   hungryButton.hidden = false;
   lightsOutButton.hidden = false;
   playTimeButton.hidden = false;
-  // console.log(namePlaceHolder);
+  hungryTimerPlaceholder.hidden = false;
+  playTimerPlaceholder.hidden = false;
+  sleepTimerPlaceholder.hidden = false;
 }
 
 //  handle FNS tell timer what to do when button is clicked
@@ -39,14 +50,14 @@ function handleHungry () {
   // 
   if (hungry > 0 && hungry < 10) {
     hungry--;
-    hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
+    hungryTimerPlaceholder.textContent = `${hungry}`;
   }
 }
 
 function handleLightsOut () {
   if (sleep > 0 && sleep < 10) {
     sleep--
-    sleepTimerPlaceholder.textContent = `sleepyness: ${sleep}`;
+    sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
   }
 }
 
@@ -72,7 +83,7 @@ function startTimer() {
     setInterval(function () {
       if (hungry < 10) {
         hungry++;
-        hungryTimerPlaceholder.textContent = `hungry: ${hungry}`;
+        hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
       } else {
         ripPet();
       }
@@ -83,7 +94,7 @@ function startTimer() {
     setInterval(function () {
       if (sleep < 10) {
         sleep++;
-        sleepTimerPlaceholder.textContent = `sleep: ${sleep}`;
+        sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
       } else {
         ripPet();
       }
@@ -94,7 +105,7 @@ function startTimer() {
     setInterval(function () {
       if (play < 10) {
         play++;
-        playTimerPlaceholder.textContent = `play: ${play}`;
+        playTimerPlaceholder.textContent = `boredom: ${play}`;
       } else {
         ripPet();
       }
