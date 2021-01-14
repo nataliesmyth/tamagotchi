@@ -55,7 +55,7 @@ function handleHungry () {
   // 
   if (hungry > 0 && hungry < 10) {
     hungry--;
-    hungryTimerPlaceholder.textContent = `${hungry}`;
+    hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
