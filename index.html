@@ -13,21 +13,23 @@
 <body>
     <header>
         <h1>Tamagotchi</h1>
-  
-        <h3 id="name"></h3>
-        <h3 id="timer" class="timer"></h3>
     </header>
-        
+  
     <main>
+        <div class="pet-name-age">
+            <h3 id="name">name: </h3>
+            <h3 id="timer" class="timer">age: </h3>
+        </div>
+
         <div class="startButton">
             <button id="startGame">START</button>
         </div>
 
-        <!-- <div class="gameTimers"> -->
-            <p id="hungryTimer" class="timer"></p>
-            <p id="sleepTimer" class="timer"></p>
-            <p id="playTimer" class="timer"></p>
-        <!-- </div> -->
+        <div class="gameTimers">
+            <p id="hungryTimer" class="timer">hunger: </p>
+            <p id="sleepTimer" class="timer">sleepiness: </p>
+            <p id="playTimer" class="timer">boredom: </p>
+        </div>
     
         <div class="gameButtons" id="gameBtns">
             <button class=".btn" id="hungry">Feed me!</button>

@@ -11,9 +11,12 @@ let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
-// console.log(hungryTimerPlaceholder);
-// console.log(sleepTimerPlaceholder);
-// console.log(playTimerPlaceholder);
+// hide timers
+hungryTimerPlaceholder.hidden = true;
+playTimerPlaceholder.hidden = true;
+sleepTimerPlaceholder.hidden = true;
+
+// hide buttons
 hungryButton.hidden = true;
 lightsOutButton.hidden = true;
 playTimeButton.hidden = true;
@@ -31,7 +34,9 @@ function handleStartGame () {
   hungryButton.hidden = false;
   lightsOutButton.hidden = false;
   playTimeButton.hidden = false;
-  // console.log(namePlaceHolder);
+  hungryTimerPlaceholder.hidden = false;
+  playTimerPlaceholder.hidden = false;
+  sleepTimerPlaceholder.hidden = false;
 }
 
 //  handle FNS tell timer what to do when button is clicked
@@ -39,7 +44,7 @@ function handleHungry () {
   // 
   if (hungry > 0 && hungry < 10) {
     hungry--;
-    hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
+    hungryTimerPlaceholder.textContent = `${hungry}`;
   }
 }
 
