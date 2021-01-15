@@ -11,23 +11,26 @@ let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
+// hide game
+let gameBoard = document.getElementById('game')
+gameBoard.hidden = true;
 // hide timers
-let petName = document.getElementById('name')
-let petAge = document.getElementById('timer')
-petName.hidden = true;
-petAge.hidden = true;
-hungryTimerPlaceholder.hidden = true;
-playTimerPlaceholder.hidden = true;
-sleepTimerPlaceholder.hidden = true;
+// let petName = document.getElementById('name')
+// let petAge = document.getElementById('timer')
+// petName.hidden = true;
+// petAge.hidden = true;
+// hungryTimerPlaceholder.hidden = true;
+// playTimerPlaceholder.hidden = true;
+// sleepTimerPlaceholder.hidden = true;
 
 // hide buttons
-hungryButton.hidden = true;
-lightsOutButton.hidden = true;
-playTimeButton.hidden = true;
+// hungryButton.hidden = true;
+// lightsOutButton.hidden = true;
+// playTimeButton.hidden = true;
 
 // hide egg
-let egg = document.getElementById('egg')
-egg.hidden = true;
+// let egg = document.getElementById('egg')
+// egg.hidden = true;
 
 function handleStartGame () {
   // user input is saved in name variable
@@ -38,16 +41,17 @@ function handleStartGame () {
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
-  egg.hidden = false;
+  gameBoard.hidden = false;
   startGameButton.hidden = true;
-  petAge.hidden = false;
-  petName.hidden = false;
-  hungryButton.hidden = false;
-  lightsOutButton.hidden = false;
-  playTimeButton.hidden = false;
-  hungryTimerPlaceholder.hidden = false;
-  playTimerPlaceholder.hidden = false;
-  sleepTimerPlaceholder.hidden = false;
+  // petAge.hidden = false;
+  // petName.hidden = false;
+  // hungryButton.hidden = false;
+  // lightsOutButton.hidden = false;
+  // playTimeButton.hidden = false;
+  // hungryTimerPlaceholder.hidden = false;
+  // playTimerPlaceholder.hidden = false;
+  // sleepTimerPlaceholder.hidden = false;
+  // egg.hidden = false;
 }
 
 //  handle FNS tell timer what to do when button is clicked
