@@ -97,12 +97,14 @@ function startTimer() {
 
   // exit game
   function ripPet() {
+    console.log('you lost!')
     // console.log(time);
     // console.log(hungry);
     // console.log(sleep);
     // console.log(play);
 
     if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
+      let egg = document.getElementById()
       clearInterval(startTimer);
       clearInterval(startPlayTimer);
       clearInterval(startHungryTimer);
