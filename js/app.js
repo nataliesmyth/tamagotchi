@@ -31,7 +31,7 @@ egg.hidden = true;
 
 function handleStartGame () {
   // user input is saved in name variable
-  let name = prompt("What is your name?");
+  let name = prompt("What is your pet's name?");
   let namePlaceHolder = document.getElementById('name');
   namePlaceHolder.textContent = `name: ${name}`;
   startTimer();
