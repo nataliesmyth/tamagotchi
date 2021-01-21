@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/app.js"></script>
     <title>Tamagotchi</title>
 </head>
 
@@ -21,14 +21,14 @@
     <main>
         <div id="game">
             <div class="pet-name-age">
-                <h3 id="name">name: </h3>
-                <h3 id="timer" class="timer">age: </h3>
+                <h2 id="name">name: </h2>
+                <h2 id="timer" class="timer">age: </h2>
             </div>
 
             <div class="gameTimers">
                 <p id="hungryTimer" class="timer">hunger: </p>
-                <p id="sleepTimer" class="timer">sleepiness: </p>
                 <p id="playTimer" class="timer">boredom: </p>
+                <p id="sleepTimer" class="timer">sleepiness: </p>
             </div>
         
             
@@ -41,6 +41,10 @@
                     <div class="pet"></div>
                 </div>    
             <!-- </div> -->
+
+            <div class="bird" id="bird">
+                <div class="bird-eye"></div>
+            </div>
 
             <div class="gameButtons" id="gameBtns">
                 <button id="hungry">Feed me!</button>

@@ -38,7 +38,7 @@ function handleStartGame () {
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
-  egg.hidden = false;
+  // gameBoard.hidden = false;
   startGameButton.hidden = true;
   // petAge.hidden = false;
   // petName.hidden = false;
@@ -55,7 +55,7 @@ function handleHungry () {
   // 
   if (hungry > 0 && hungry < 10) {
     hungry--;
-    hungryTimerPlaceholder.textContent = `${hungry}`;
+    hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
@@ -80,6 +80,14 @@ function startTimer() {
         timerPlaceholder.textContent = `age: ${time}`;
       } else if (time == 10) {
         ripPet();
+      }
+      // while (time > 5) {
+      //   egg.hidden = true;
+      //   bird.hidden = false; 
+      // }
+        
+
+        
       }
     }, 1000);
   }
@@ -119,6 +127,7 @@ function startTimer() {
 
   // exit game
   function ripPet() {
+    console.log('you lost!')
     // console.log(time);
     // console.log(hungry);
     // console.log(sleep);
