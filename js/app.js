@@ -10,7 +10,11 @@ let timerPlaceholder = document.getElementById("timer");
 let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
+let bird = document.getElementById('bird')
+let egg = document.getElementById('egg')
 
+// hide bird
+bird.hidden = true;
 // hide game
 let gameBoard = document.getElementById('game')
 gameBoard.hidden = true;
@@ -59,6 +63,14 @@ function startTimer() {
       } else if (time == 10) {
         ripPet();
       }
+      while (time > 5) {
+        egg.hidden = true;
+        bird.hidden = false; 
+      }
+        
+
+        
+      }
     }, 1000);
   }
 
@@ -104,7 +116,6 @@ function startTimer() {
     // console.log(play);
 
     if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
-      let egg = document.getElementById()
       clearInterval(startTimer);
       clearInterval(startPlayTimer);
       clearInterval(startHungryTimer);
