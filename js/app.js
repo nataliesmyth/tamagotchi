@@ -14,10 +14,10 @@ let bird = document.getElementById('bird')
 let egg = document.getElementById('egg')
 
 // hide bird
-bird.hidden = true;
+// bird.hidden = true;
 // hide game
-let gameBoard = document.getElementById('game')
-gameBoard.hidden = true;
+// let gameBoard = document.getElementById('game')
+// gameBoard.hidden = true;
 
 function handleStartGame () {
   // user input is saved in name variable
@@ -28,7 +28,7 @@ function handleStartGame () {
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
-  gameBoard.hidden = false;
+  // gameBoard.hidden = false;
   startGameButton.hidden = true;
 }
 

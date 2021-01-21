@@ -39,7 +39,7 @@ h1 {
   font-size: 3em;
 }
 
-h2 {
+h3 {
   font-weight: 400;
   text-align: center;
 }
@@ -96,12 +96,20 @@ p {
   display: block;
   text-align: center;
   position: relative;
-  top: -100px;
+  top: -75px;
 }
 
 .pet-name-age {
   padding: 2em;
 }
+
+/* .gameTimers {
+  padding: 1em;
+} */
+
+/* .pet-name-age {
+  display: inline;
+} */
 
 /* .startButton {
   position: -webkit-sticky;
@@ -167,68 +175,6 @@ p {
    60% { transform: translateX(10%) rotate(2deg); } 
    75% { transform: translateX(-5%) rotate(-1deg); } 
    100% { transform: translateX(0%); } 
-}
-
-/* bird */
-
-
-.bird{
-	display:block;
-	position:relative;
-	height:150px;
-	width:100px;
-	//background-color:#ff0f00;
-	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 0%);
-	border-radius:50px 50px 100px 0;
-	transform:rotatez(30deg);
-	&::before{
-		content:"";
-		position:absolute;
-		height: 0px;
-		width:0px;
-		border:15px solid transparent;
-		border-left:25px solid #ccc;
-		transform:rotatez(-30deg);
-		display:block;
-		top:2px;
-		right:-29px;
-	}
-	
-	&::after{
-		content:"";
-		position:absolute;
-		height:90px;
-		width:60px;
-		border-radius:50px 50px 100px 0px;
-		//background:#ff0f9f;
-		background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-		transform:rotatez(90deg);
-		display:block;
-		top:40px;
-		left:-20px;
-	}
-	.eye{
-		display:block;
-		width:17px;
-		height:17px;
-		background:#fff;
-		border-radius:10px;
-		position:absolute;
-		top:25px;
-		right:25px;
-		&::before{
-			content:"";
-			position:absolute;
-			height:11px;
-			width:11px;
-			background:#000;
-			border-radius:10px;
-			display:block;
-			top:4px;
-			right:1px;
-		}
-	}
-	
 }
 /*
 .wobble { 
