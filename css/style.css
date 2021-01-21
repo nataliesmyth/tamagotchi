@@ -57,6 +57,7 @@ main {
   padding: 1em;
   justify-content: space-between;
   height: 500px;
+  top: 50px;
 }
 
 p {
@@ -101,6 +102,12 @@ p {
 
 .pet-name-age {
   padding: 2em;
+}
+
+.start-game {
+  position: relative;
+  left: 530px;
+  top: -24px;
 }
 
 /* .gameTimers {
