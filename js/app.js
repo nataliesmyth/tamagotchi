@@ -63,14 +63,6 @@ function startTimer() {
       } else if (time == 10) {
         ripPet();
       }
-      // while (time > 5) {
-      //   egg.hidden = true;
-      //   bird.hidden = false; 
-      // }
-        
-
-        
-      }
     }, 1000);
   }
 
