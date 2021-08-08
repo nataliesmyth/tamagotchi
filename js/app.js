@@ -1,4 +1,4 @@
-let startGameButton = document.getElementById('start-game');
+let startGameButton = document.getElementById('startGame');
 let hungryButton = document.getElementById('hungry');
 let lightsOutButton = document.getElementById('sleep');
 let playTimeButton = document.getElementById('play');
@@ -11,6 +11,17 @@ let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
+
+class tamagotchi {
+  constructor(name) {
+    this.name = name;
+    this.creatureType = 'tamagotchi';
+    this.hunger = 10;
+    this.sleepiness = 10;
+    this.boredom = 10;
+    this.age = 0;
+  }
+}
 // hide timers
 // let petName = document.getElementById('name')
 // let petAge = document.getElementById('timer')
@@ -120,18 +131,21 @@ function startTimer() {
   // exit game
   function ripPet() {
     console.log('you lost!')
+    startGameButton.hidden = false;
+
     // console.log(time);
     // console.log(hungry);
     // console.log(sleep);
     // console.log(play);
 
-    if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
+    // if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
       clearInterval(startTimer);
+      console.log(clearInterval(startTimer))
       clearInterval(startPlayTimer);
       clearInterval(startHungryTimer);
       clearInterval(startSleepTimer);
     }
-  }
+  
 
 hungryButton.addEventListener("click", handleHungry);
 lightsOutButton.addEventListener("click", handleLightsOut);
