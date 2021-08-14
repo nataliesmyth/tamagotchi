@@ -11,17 +11,37 @@ let hungryTimerPlaceholder = document.getElementById("hungryTimer");
 let playTimerPlaceholder = document.getElementById("playTimer");
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
-
-class tamagotchi {
+// Class
+class Tamagotchi {
   constructor(name) {
-    this.name = name;
+    this.name = name || 'My Tamagotchi';
     this.creatureType = 'tamagotchi';
     this.hunger = 10;
     this.sleepiness = 10;
     this.boredom = 10;
     this.age = 0;
   }
+  // code here ends up on prototype
+  // Instance methods
+  play() {
+    this.boredom -= 1;
+  }
+
+  feed() {
+    this.hunger -= 1;
+  }
+
+  turnOff() {
+    this.sleepiness -= 1;
+  }
 }
+
+// instance method
+// tama1 is an instance of the Tamagotchi Class
+// We instantiate the Tamagotchi class
+// Methods without the static keyword are instance methods. Tamagotchi class cannot access instance methods, but it can access static methods.
+const tama1 = new Tamagotchi();
+console.log(tama1);
 // hide timers
 // let petName = document.getElementById('name')
 // let petAge = document.getElementById('timer')
