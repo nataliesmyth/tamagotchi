@@ -16,10 +16,10 @@ class Tamagotchi {
   constructor(name) {
     this.name = name || 'My Tamagotchi';
     this.creatureType = 'tamagotchi';
-    this.hunger = 10;
-    this.sleepiness = 10;
-    this.boredom = 10;
-    this.age = 0;
+    this.hunger = 0;
+    this.sleepiness = 0;
+    this.boredom = 0;
+    this.age = 0; 
   }
   // code here ends up on prototype
   // Instance methods
