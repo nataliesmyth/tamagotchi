@@ -109,7 +109,7 @@ function startTimer() {
       if (time < 10) {
         time++;
         timerPlaceholder.textContent = `age: ${time}`;
-      } else if (time == 10) {
+      } else if (time >= 10) {
         ripPet();
       }
     }, 1000);
@@ -143,7 +143,7 @@ function startTimer() {
         play++;
         playTimerPlaceholder.textContent = `boredom: ${play}`;
       } else {
-        ripPet();
+        clearInterval(startPlayTimer);
       }
     }, 3500);
   }
@@ -160,12 +160,11 @@ function startTimer() {
 
     // if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
       clearInterval(startTimer);
-      console.log(clearInterval(startTimer))
       clearInterval(startPlayTimer);
       clearInterval(startHungryTimer);
       clearInterval(startSleepTimer);
     }
-  
+
 
 hungryButton.addEventListener("click", handleHungry);
 lightsOutButton.addEventListener("click", handleLightsOut);
