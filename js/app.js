@@ -117,7 +117,7 @@ function startTimer() {
 
   function startHungryTimer() {
     setInterval(function () {
-      if (hungry < 10) {
+      if (hungry < 10 && time < 10) {
         hungry++;
         hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
       } else {
@@ -128,7 +128,7 @@ function startTimer() {
 
   function startSleepTimer() {
     setInterval(function () {
-      if (sleep < 10) {
+      if (sleep < 10 && time < 10) {
         sleep++;
         sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
       } else {
@@ -139,7 +139,7 @@ function startTimer() {
 
   function startPlayTimer() {
     setInterval(function () {
-      if (play < 10) {
+      if (play < 10 && time < 10) {
         play++;
         playTimerPlaceholder.textContent = `boredom: ${play}`;
       } else {
