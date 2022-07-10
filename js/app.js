@@ -13,7 +13,7 @@ let sleepTimerPlaceholder = document.getElementById("sleepTimer");
 
 // Class
 class Tamagotchi {
-  constructor(name) {
+  constructor(name, hunger, sleepiness, boredom, age) {
     this.name = name || 'My Tamagotchi';
     this.creatureType = 'tamagotchi';
     this.hunger = 0;
@@ -40,7 +40,7 @@ class Tamagotchi {
 // tama1 is an instance of the Tamagotchi Class
 // We instantiate the Tamagotchi class
 // Methods without the static keyword are instance methods. Tamagotchi class cannot access instance methods, but it can access static methods.
-const tama1 = new Tamagotchi();
+const tama1 = new Tamagotchi(0, 0, 0, 0);
 console.log(tama1);
 // hide timers
 // let petName = document.getElementById('name')
@@ -84,21 +84,21 @@ function handleStartGame () {
 //  handle FNS tell timer what to do when button is clicked
 function handleHungry () {
   // 
-  if (hungry > 0 && hungry < 10) {
+  if (hungry > 0 && hungry < 10 && time < 10) {
     hungry--;
     hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
 function handleLightsOut () {
-  if (sleep > 0 && sleep < 10) {
+  if (sleep > 0 && sleep < 10 && time < 10) {
     sleep--
     sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
   }
 }
 
 function handlePlayTime () {
-  if (play > 0 && play < 10) {
+  if (play > 0 && play < 10 && time < 10) {
     play--
     playTimerPlaceholder.textContent = `boredom: ${play}`;
   }
