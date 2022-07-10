@@ -2,6 +2,7 @@ let startGameButton = document.getElementById('startGame');
 let hungryButton = document.getElementById('hungry');
 let lightsOutButton = document.getElementById('sleep');
 let playTimeButton = document.getElementById('play');
+let mainGame = document.getElementById('main-game');
 let time = 0;
 let hungry = 0;
 let sleep = 0;
@@ -152,6 +153,7 @@ function startTimer() {
   function ripPet() {
     // console.log('you lost!')
     startGameButton.hidden = false;
+    mainGame.hidden = true;
 
     // console.log(time);
     // console.log(hungry);
