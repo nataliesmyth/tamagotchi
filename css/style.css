@@ -23,7 +23,7 @@ body {
 button {
   margin: 1em auto;
   background-color: var(--green);
-  border-radius: 5px; 
+  border-radius: 1em; 
   border: .75em solid var(--yellow);
   padding: 1em;
   font-size: 1em;
@@ -45,8 +45,8 @@ h3 {
 }
 
 header {
-  margin: 0 auto;
-  height: 104.4px;
+  /* margin: 0 auto; */
+  /* height: 104.4px; */
 }
 
 main {
@@ -55,9 +55,10 @@ main {
   border: solid var(--green);
   margin: 1em;
   padding: 1em;
-  justify-content: space-between;
-  height: 500px;
+  /* justify-content: space-between; */
+  height: 600px;
   top: 50px;
+  border-radius: 1em;
 }
 
 p {
@@ -105,9 +106,8 @@ p {
 }
 
 .start-game {
-  position: relative;
-  left: 530px;
-  top: -24px;
+  display: flex;
+  justify-content: center;
 }
 
 /* .gameTimers {
