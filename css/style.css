@@ -54,10 +54,10 @@ main {
   position: relative;
   border: solid var(--green);
   margin: 1em;
-  padding: 1em;
+  /* padding: 1em; */
   /* justify-content: space-between; */
-  height: 600px;
-  top: 50px;
+  /* height: 600px; */
+  /* top: 50px; */
   border-radius: 1em;
 }
 
@@ -68,8 +68,9 @@ p {
 .animated {
   background-color: rgb(240, 243, 189);
   position: relative;
-  top: -141px;
-  left: 45%;
+  margin: 5em auto;
+  /* top: -141px; */
+  /* left: 45%; */
   transform: translate(-50%, -50%);
   width: 150px;
   height: 187.5px;
@@ -90,8 +91,8 @@ p {
 
 .tamagotchi {
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  /* height: 300px; */
 }
 
 .gameButtons {
@@ -101,7 +102,14 @@ p {
   top: -75px;
 }
 
+.gameTimers {
+  display: flex;
+  justify-content: space-around;
+}
+
 .pet-name-age {
+  display: flex;
+  justify-content: space-evenly;
   padding: 2em;
 }
 
