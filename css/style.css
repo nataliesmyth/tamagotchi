@@ -99,7 +99,7 @@ p {
   display: block;
   text-align: center;
   position: relative;
-  top: -75px;
+  /* top: -75px; */
 }
 
 .gameTimers {
