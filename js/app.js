@@ -1,16 +1,25 @@
+// ---------- VARIABLES ---------- //
 let startGameButton = document.getElementById('startGame');
-let hungryButton = document.getElementById('hungry');
-let lightsOutButton = document.getElementById('sleep');
-let playTimeButton = document.getElementById('play');
-let mainGame = document.getElementById('main-game');
+let timerPlaceholder = document.getElementById("timer");
+
+// Start values
 let time = 0;
 let hungry = 0;
 let sleep = 0;
 let play = 0;
-let timerPlaceholder = document.getElementById("timer");
+
+// hunger elements
+let hungryButton = document.getElementById('hungry');
 let hungryTimerPlaceholder = document.getElementById("hungryTimer");
-let playTimerPlaceholder = document.getElementById("playTimer");
+
+// sleep elements
+let lightsOutButton = document.getElementById('sleep');
 let sleepTimerPlaceholder = document.getElementById("sleepTimer");
+
+// bored elements
+let playTimeButton = document.getElementById('play');
+let playTimerPlaceholder = document.getElementById("playTimer");
+
 
 // Class
 class Tamagotchi {
@@ -37,10 +46,11 @@ class Tamagotchi {
   }
 }
 
+// Class instantiation
 const tama1 = new Tamagotchi(0, 0, 0, 0);
 console.log(tama1);
 
-
+// ---------- FUNCTIONS ---------- //
 function handleStartGame () {
   // user input is saved in name variable
   let name = prompt("What is your pet's name?");
@@ -128,16 +138,6 @@ function startTimer() {
     // console.log('you lost!')
     startGameButton.hidden = false;
 
-    // console.log(time);
-    // console.log(hungry);
-    // console.log(sleep);
-    // console.log(play);
-
-    // if (time === 10 || hungry === 10 || sleep === 10 || play === 10) {
-      clearInterval(startTimer);
-      clearInterval(startPlayTimer);
-      clearInterval(startHungryTimer);
-      clearInterval(startSleepTimer);
     }
 
 
