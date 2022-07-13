@@ -1,7 +1,9 @@
 // ---------- VARIABLES ---------- //
 let startGameButton = document.getElementById('startGame');
 let timerPlaceholder = document.getElementById("timer");
-
+let egg = document.getElementById('egg')
+let bird = document.getElementById('bird')
+bird.hidden = true;
 // Start values
 let time = 0;
 let hungry = 0;
@@ -57,7 +59,8 @@ function handleStartGame () {
   let namePlaceHolder = document.getElementById('name');
   namePlaceHolder.textContent = `name: ${name}`;
   startGameButton.remove()
-
+  bird.hidden = false;
+  egg.hidden = true;
   startTimer();
   startHungryTimer();
   startSleepTimer();
