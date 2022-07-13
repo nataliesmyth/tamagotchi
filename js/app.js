@@ -72,21 +72,21 @@ function handleStartGame () {
 //  handle FNS tell timer what to do when button is clicked
 function handleHungry () {
   // 
-  if (hungry > 0 && hungry < 10 && time < 10) {
+  if (hungry > 0 && hungry < 10 && time < 18) {
     hungry--;
     hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
 function handleLightsOut () {
-  if (sleep > 0 && sleep < 10 && time < 10) {
+  if (sleep > 0 && sleep < 8 && time < 18) {
     sleep--
     sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
   }
 }
 
 function handlePlayTime () {
-  if (play > 0 && play < 10 && time < 10) {
+  if (play > 0 && play < 10 && time < 18) {
     play--
     playTimerPlaceholder.textContent = `boredom: ${play}`;
   }
@@ -94,10 +94,10 @@ function handlePlayTime () {
 
 function startTimer() {
     setInterval(function () {
-      if (time < 10) {
+      if (time < 18) {
         time++;
         timerPlaceholder.textContent = `age: ${time}`;
-      } else if (time >= 10) {
+      } else if (time >= 18) {
         ripPet();
       }
     }, 1000);
@@ -105,7 +105,7 @@ function startTimer() {
 
   function startHungryTimer() {
     setInterval(function () {
-      if (hungry < 10 && time < 10) {
+      if (hungry < 10 && time < 18) {
         hungry++;
         hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
       } else {
@@ -116,7 +116,7 @@ function startTimer() {
 
   function startSleepTimer() {
     setInterval(function () {
-      if (sleep < 10 && time < 10) {
+      if (sleep < 10 && time < 18) {
         sleep++;
         sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
       } else {
@@ -127,7 +127,7 @@ function startTimer() {
 
   function startPlayTimer() {
     setInterval(function () {
-      if (play < 10 && time < 10) {
+      if (play < 10 && time < 18) {
         play++;
         playTimerPlaceholder.textContent = `boredom: ${play}`;
       } else {
@@ -138,7 +138,7 @@ function startTimer() {
 
   // exit game
   function ripPet() {
-    // console.log('you lost!')
+    console.log('you lost!')
     startGameButton.hidden = false;
 
     }
