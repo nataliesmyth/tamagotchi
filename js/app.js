@@ -1,11 +1,14 @@
+console.log('sanity check')
+
 // ---------- VARIABLES ---------- //
 let startGameButton = document.getElementById('startGame');
 let timerPlaceholder = document.getElementById("timer");
 let egg = document.getElementById('egg')
 let bird = document.getElementById('bird')
 bird.hidden = true;
+
 // Start values
-let time = 0;
+let age = 0;
 let hungry = 0;
 let sleep = 0;
 let play = 0;
@@ -28,10 +31,10 @@ class Tamagotchi {
   constructor(name, hunger, sleepiness, boredom, age) {
     this.name = name || 'My Tamagotchi';
     this.creatureType = 'tamagotchi';
-    this.hunger = 0;
-    this.sleepiness = 0;
-    this.boredom = 0;
-    this.age = 0; 
+    this.hunger = hunger;
+    this.sleepiness = sleepiness;
+    this.boredom = boredom;
+    this.age = age; 
   }
   // code here ends up on prototype
   // Instance methods
@@ -49,7 +52,7 @@ class Tamagotchi {
 }
 
 // Class instantiation
-const tama1 = new Tamagotchi(0, 0, 0, 0);
+const tama1 = new Tamagotchi(name, hungry, sleep, play, age);
 console.log(tama1);
 
 // ---------- FUNCTIONS ---------- //
@@ -61,51 +64,51 @@ function handleStartGame () {
   startGameButton.remove()
   bird.hidden = false;
   egg.hidden = true;
-  startTimer();
-  startHungryTimer();
-  startSleepTimer();
-  startPlayTimer();
+  ageTimer();
+  hungerTimer();
+  sleepTimer();
+  playTimer();
   
 
 }
 
-//  handle FNS tell timer what to do when button is clicked
+//  handle FNS tell ager what to do when button is clicked
 function handleHungry () {
   // 
-  if (hungry > 0 && hungry < 10 && time < 18) {
+  if (hungry > 0 && hungry < 10 && age < 10) {
     hungry--;
     hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
   }
 }
 
 function handleLightsOut () {
-  if (sleep > 0 && sleep < 8 && time < 18) {
+  if (sleep > 0 && sleep < 8 && age < 10) {
     sleep--
     sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
   }
 }
 
 function handlePlayTime () {
-  if (play > 0 && play < 10 && time < 18) {
+  if (play > 0 && play < 10 && age < 10) {
     play--
     playTimerPlaceholder.textContent = `boredom: ${play}`;
   }
 }
 
-function startTimer() {
+function ageTimer() {
     setInterval(function () {
-      if (time < 18) {
-        time++;
-        timerPlaceholder.textContent = `age: ${time}`;
-      } else if (time >= 18) {
+      if (age < 10) {
+        age++;
+        timerPlaceholder.textContent = `age: ${age}`;
+      } else if (age >= 10) {
         ripPet();
       }
     }, 1000);
   }
 
-  function startHungryTimer() {
+  function hungerTimer() {
     setInterval(function () {
-      if (hungry < 10 && time < 18) {
+      if (hungry < 10 && age < 10) {
         hungry++;
         hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
       } else {
@@ -114,9 +117,9 @@ function startTimer() {
     }, 2000);
   }
 
-  function startSleepTimer() {
+  function sleepTimer() {
     setInterval(function () {
-      if (sleep < 10 && time < 18) {
+      if (sleep < 10 && age < 10) {
         sleep++;
         sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
       } else {
@@ -125,23 +128,30 @@ function startTimer() {
     }, 3000);
   }
 
-  function startPlayTimer() {
+  function playTimer() {
     setInterval(function () {
-      if (play < 10 && time < 18) {
+      if (play < 10 && age < 10) {
         play++;
         playTimerPlaceholder.textContent = `boredom: ${play}`;
       } else {
-        clearInterval(startPlayTimer);
+        ripPet();
       }
     }, 3500);
   }
 
   // exit game
   function ripPet() {
+    clearIntervals();
     console.log('you lost!')
-    startGameButton.hidden = false;
+  }
 
-    }
+  // clear interval
+  function clearIntervals() {
+    clearInterval(ageTimer)
+    clearInterval(hungerTimer);
+    clearInterval(playTimer);
+    clearInterval(sleepTimer)
+  }
 
 
 hungryButton.addEventListener("click", handleHungry);
