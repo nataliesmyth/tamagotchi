@@ -37,49 +37,23 @@ class Tamagotchi {
   }
 }
 
-// instance method
-// tama1 is an instance of the Tamagotchi Class
-// We instantiate the Tamagotchi class
-// Methods without the static keyword are instance methods. Tamagotchi class cannot access instance methods, but it can access static methods.
 const tama1 = new Tamagotchi(0, 0, 0, 0);
 console.log(tama1);
-// hide timers
-// let petName = document.getElementById('name')
-// let petAge = document.getElementById('timer')
-// petName.hidden = true;
-// petAge.hidden = true;
-// hungryTimerPlaceholder.hidden = true;
-// playTimerPlaceholder.hidden = true;
-// sleepTimerPlaceholder.hidden = true;
 
-// hide buttons
-// hungryButton.hidden = true;
-// lightsOutButton.hidden = true;
-// playTimeButton.hidden = true;
-
-// hide egg
-// let egg = document.getElementById('egg')
-// egg.hidden = true;
 
 function handleStartGame () {
   // user input is saved in name variable
   let name = prompt("What is your pet's name?");
   let namePlaceHolder = document.getElementById('name');
   namePlaceHolder.textContent = `name: ${name}`;
+  startGameButton.remove()
+
   startTimer();
   startHungryTimer();
   startSleepTimer();
   startPlayTimer();
-  // gameBoard.hidden = false;
-  startGameButton.hidden = true;
-  // petAge.hidden = false;
-  // petName.hidden = false;
-  // hungryButton.hidden = false;
-  // lightsOutButton.hidden = false;
-  // playTimeButton.hidden = false;
-  // hungryTimerPlaceholder.hidden = false;
-  // playTimerPlaceholder.hidden = false;
-  // sleepTimerPlaceholder.hidden = false;
+  
+
 }
 
 //  handle FNS tell timer what to do when button is clicked
@@ -153,7 +127,6 @@ function startTimer() {
   function ripPet() {
     // console.log('you lost!')
     startGameButton.hidden = false;
-    mainGame.hidden = true;
 
     // console.log(time);
     // console.log(hungry);
@@ -172,110 +145,6 @@ hungryButton.addEventListener("click", handleHungry);
 lightsOutButton.addEventListener("click", handleLightsOut);
 playTimeButton.addEventListener("click", handlePlayTime);
 startGameButton.addEventListener("click", handleStartGame);
-
-
-
-//           "Eat" button pressed
-//              if "hunger" is = true, then
-//                 decrement "bone" count
-//                 reset timer to 10
-//          on "play" button pressed
-//             if "sleepiness" is = true, then
-//                 decrement "bed" count
-//                 reset timer to 10
-//         on "NAP" button pressed
-//             if "Nap" = true then
-//             decrement "bed" count
-//             reset timer to 10
-
-
-// //JS Class
-// class Tamagaohi {
-//     constructor(name) {
-//         this.name = name;
-//     }
-
-//         // this.hunger = 0;
-//         // this.age = 0;
-//         // this.sleepiness = 0;
-//         // this.boredom = 0;    
-// }
-
-
-
-
-
-  // 3 buttons: A, B, C
-  //    A: feedPet
-  //    B: playPet
-  //    C: goToSleep
-
-  // User creates pet name, CLICKS submit
-  // egg appears
-  // hatching lasts: 15 seconds, during which cracks appear and egg wobbles
-  // at 15 seconds, egg cracks, TAMAGATCHI appears timer starts
-
-  //BUTTONS
-  // feedMe
-  // 
-
-//   /------- Timer ------- //
-// // Select Button
-// // Save Button in Variable
-// // Add click event listener to button
-// //--------App State
-// let time = 3;
-// //---------- Cached DOM Elements
-// let startButton = document.getElementById("startGame");
-// //------------Event Listeners
-// startButton.addEventListener("click", handleStartGame);
-// //----------- Function Declarations
-// function handleStartGame() {
-//   console.log("Start Game clicked...!");
-//   // Start Timer
-//   startTimer(3);
-// }
-// // "Begin" Timer
-// function startTimer() {
-//   const Timer = setInterval(function () {
-//     if (time > 0) {
-//       time--;
-//       console.log(time);
-//     } else {
-//       console.log("Time is up");
-//       clearInterval(Timer);
-//     }
-//   }, 1000);
-// }
-// //------- Timer ------- //
-// // Select Button
-// // Save Button in Variable
-// // Add click event listener to button
-// //--------App State
-// let time = 3;
-// //Cached DOM Elements
-// const startButton = document.getElementById("startGame");
-// //------------Event Listeners
-// startButton.addEventListener("click", handleStartGame);
-// //----------- Function Declarations
-// function handleStartGame() {
-//   console.log("Start Game clicked...!");
-//   // Start Timer
-//   startTimer(3);
-// }
-// // "Begin" Timer
-// function startTimer() {
-//   const Timer = setInterval(function () {
-//     if (time > 0) {
-//       time--;
-//       console.log(time);
-//     } else {
-//       console.log("Time is up");
-//       clearInterval(Timer);
-//     }
-//   }, 1000);
-// }
-
 
 
 
