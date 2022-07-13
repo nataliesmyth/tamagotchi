@@ -13,11 +13,11 @@ Technology Used:
 
 • User starts game by creating pet name and clicking submit
 • User can use buttons to feed, play with, and put your pet to sleep
-• User wins game by keeping their pet alive until their pet turns 10 years old
+• User wins game by keeping their pet alive until their pet turns 18 years old
 •
 
   // User creates pet name, CLICKS submit
-  // egg appears
+  // bird appears
   // hatching lasts: 15 seconds, during which cracks appear and egg wobbles
   // at 15 seconds, egg cracks, TAMAGATCHI appears timer starts
 
