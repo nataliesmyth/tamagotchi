@@ -100,7 +100,7 @@ function ageTimer() {
       if (age < 10) {
         age++;
         timerPlaceholder.textContent = `age: ${age}`;
-      } else if (age >= 10) {
+      } else if (age === 10) {
         ripPet();
       }
     }, 1000);
@@ -111,9 +111,10 @@ function ageTimer() {
       if (hungry < 10 && age < 10) {
         hungry++;
         hungryTimerPlaceholder.textContent = `hunger: ${hungry}`;
-      } else {
-        ripPet();
-      }
+      } 
+      // else {
+      //   ripPet();
+      // }
     }, 2000);
   }
 
@@ -122,9 +123,10 @@ function ageTimer() {
       if (sleep < 10 && age < 10) {
         sleep++;
         sleepTimerPlaceholder.textContent = `sleepiness: ${sleep}`;
-      } else {
-        ripPet();
-      }
+      } 
+      // else {
+      //   ripPet();
+      // }
     }, 3000);
   }
 
@@ -133,24 +135,24 @@ function ageTimer() {
       if (play < 10 && age < 10) {
         play++;
         playTimerPlaceholder.textContent = `boredom: ${play}`;
-      } else {
-        ripPet();
-      }
+      } 
+      // else {
+      //   ripPet();
+      // }
     }, 3500);
   }
 
   // exit game
   function ripPet() {
     clearIntervals();
-    console.log('you lost!')
   }
 
   // clear interval
   function clearIntervals() {
-    clearInterval(ageTimer)
+    clearInterval(ageTimer);
     clearInterval(hungerTimer);
     clearInterval(playTimer);
-    clearInterval(sleepTimer)
+    clearInterval(sleepTimer);
   }
 
 
