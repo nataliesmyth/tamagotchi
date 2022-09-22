@@ -44,20 +44,11 @@ h3 {
   text-align: center;
 }
 
-header {
-  /* margin: 0 auto; */
-  /* height: 104.4px; */
-}
-
 main {
   display: block;
   position: relative;
   border: solid var(--green);
   margin: 1em;
-  /* padding: 1em; */
-  /* justify-content: space-between; */
-  /* height: 600px; */
-  /* top: 50px; */
   border-radius: 1em;
 }
 
