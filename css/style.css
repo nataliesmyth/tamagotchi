@@ -70,8 +70,6 @@ p {
   background-color: rgb(240, 243, 189);
   position: relative;
   margin: 5em auto;
-  /* top: -141px; */
-  /* left: 45%; */
   transform: translate(-50%, -50%);
   width: 150px;
   height: 187.5px;
@@ -92,8 +90,6 @@ p {
 
 .tamagotchi {
   margin: 0 auto;
-  /* width: 300px; */
-  /* height: 300px; */
 }
 
 /* BIRD */
@@ -128,7 +124,6 @@ transform: rotate(22deg) translate(-50%,-50%) ;
   display: block;
   text-align: center;
   position: relative;
-  /* top: -75px; */
 }
 
 .gameTimers {
@@ -205,37 +200,3 @@ transform: rotate(22deg) translate(-50%,-50%) ;
    75% { transform: translateX(-5%) rotate(-1deg); } 
    100% { transform: translateX(0%); } 
 }
-/*
-.wobble { 
-   -webkit-animation-name: wobble; 
-   animation-name: wobble;
-} */
-
- /* .pet {
- background-color: rgb(248, 248, 194);
- position: fixed;
- top: 40%;
- left: 75%;
- transform: translate(-50%, -50%);
- border-radius: 100px;
- border: 15px solid rgb(253, 253, 226);
- width: 126px;
- height: 180px;
- } */
-
-/*  .egg {
-    background-color: rgb(240, 243, 189);
-    position: fixed;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 187.5px;
-    border-top-left-radius: 50% 60%;
-    border-top-right-radius: 50% 60%;
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
-    box-shadow: inset -10px -5px rgba(138, 139, 109, 0.808);
-    animation: wobble 8s linear infinite;
-    transform-origin: 0 50%;
-  }  */
