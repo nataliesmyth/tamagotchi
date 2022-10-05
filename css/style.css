@@ -88,6 +88,7 @@ p {
   display: block;
   height: 10em;
 }
+
 .bird{
   position: absolute;
   height: 93px;
@@ -98,6 +99,7 @@ p {
   top: 60%;
 transform: rotate(22deg) translate(-50%,-50%) ;
 }
+
 .bird::before{
   content: '';
   position: absolute;
@@ -190,4 +192,11 @@ transform: rotate(22deg) translate(-50%,-50%) ;
    60% { transform: translateX(10%) rotate(2deg); } 
    75% { transform: translateX(-5%) rotate(-1deg); } 
    100% { transform: translateX(0%); } 
+}
+
+@media (max-width: 460px) {
+  button {
+    font-size: .95em;
+    width: 94.65px;
+  }
 }
